@@ -12,6 +12,9 @@ const productSchema = new mongoose.Schema({
     image: {
         type: String,
     },
+    desc: {
+        type: String,
+    },
     category: {
         type: ObjectId,
         ref: 'Category'
