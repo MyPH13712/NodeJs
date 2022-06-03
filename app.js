@@ -12,9 +12,9 @@ app.use(cors())
 app.use(express.json());
 
 app.use(homeRoute);
-app.use("/api", productRoute);
-app.use("/api", categoryRoute);
-app.use("/api", authRoute);
+app.use('/api',productRoute);
+app.use('/api',categoryRoute);
+app.use('/api',authRoute);
 
 mongoose.connect('mongodb://localhost:27017/we16307');
 //lắng nghe cổng thực thi 
